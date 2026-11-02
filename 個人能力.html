@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>核心能力與實戰藍圖 | Profile Blueprint</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent-tech: #38bdf8;
+      --accent-arch: #34d399;
+      --accent-ops: #fbbf24;
+      --accent-cog: #a78bfa;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.5rem;
+    }
+
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 500px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .tech .card-title { color: var(--accent-tech); }
+    .arch .card-title { color: var(--accent-arch); }
+    .ops .card-title { color: var(--accent-ops); }
+    .cog .card-title { color: var(--accent-cog); }
+
+    .item {
+      margin-bottom: 1rem;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-title {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+      color: var(--text);
+    }
+
+    .item-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-align: justify;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>個人本事與能力藍圖</h1>
+      <p class="subtitle">全原生開發 × 自動化後端 × 現場實戰調度 × 結構化思維</p>
+    </header>
+
+    <div class="grid">
+      
+      <!-- 一、 核心硬實力與工程技術 -->
+      <section class="card tech">
+        <div class="card-header">
+          <h2 class="card-title">一、 核心硬實力與工程技術 (Tech Stack)</h2>
+        </div>
+        <div class="item">
+          <div class="item-title">全原生前端開發</div>
+          <div class="item-desc">精通 HTML、CSS、JavaScript，不依賴肥大框架，專注於高效、輕量、即插即用的互動介面與 Landing Page 建置。</div>
+        </div>
+        <div class="item">
+          <div class="item-title">自動化後端整合</div>
+          <div class="item-desc">精通 n8n 自動化工作流設計，擅長處理 Webhook、API 串接、資料清洗與多系統（如 Telegram、Google Sheets）自動化分流。</div>
+        </div>
+        <div class="item">
+          <div class="item-title">版本控制與部署</div>
+          <div class="item-desc">熟練操作 GitHub 進行版本控制，並使用 GitHub Pages 實現靜態專案的實質託管與發用。</div>
+        </div>
+        <div class="item">
+          <div class="item-title">資料庫與腳本處理</div>
+          <div class="item-desc">熟練運用 Excel 公式 與 Google Apps Script (GAS)，實現資料自動化結構化存儲與動態對帳處理。</div>
+        </div>
+      </section>
+
+      <!-- 二、 核心架構與設計哲學 -->
+      <section class="card arch">
+        <div class="card-header">
+          <h2 class="card-title">二、 核心架構與設計哲學 (Philosophy & Architecture)</h2>
+        </div>
+        <div class="item">
+          <div class="item-title">極簡原生哲學 (Vanilla & Pragmatic Minimalism)</div>
+          <div class="item-desc">堅持零多餘依賴的極簡架構，拒絕花俏、高層次的抽象陷阱，追求「開箱即用、穩定高效」。</div>
+        </div>
+        <div class="item">
+          <div class="item-title">製造工具思維 (Manufacturing Toolset)</div>
+          <div class="item-desc">擅長將重複出現的痛點沉澱為標準化、可複製的模組（如統一的 JSON 傳輸格式、前端 Fetch 模組、自動建庫腳本），建立不求人的獨立生產工具箱。</div>
+        </div>
+        <div class="item">
+          <div class="item-title">直通式學習 (Direct Execution)</div>
+          <div class="item-desc">跳過冗長無效的教學與雜訊，透過直接動手與查閱核心文檔，以最高效率掌握新工具與軟體環境。</div>
+        </div>
+      </section>
+
+      <!-- 三、 實戰經驗與現場調度 -->
+      <section class="card ops">
+        <div class="card-header">
+          <h2 class="card-title">三、 實戰經驗與現場調度 (Field Operations)</h2>
+        </div>
+        <div class="item">
+          <div class="item-title">動態路由與運務管理</div>
+          <div class="item-desc">具備餐飲、外送與前線物流的高壓現場經驗，擅長以系統化思維進行路徑最佳化、動態排程與危機處理。</div>
+        </div>
+        <div class="item">
+          <div class="item-title">高效率換位與應變</div>
+          <div class="item-desc">能迅速將線下複雜、繁瑣的作業邏輯，轉化為線上防呆且高效率的自動化解法。</div>
+        </div>
+      </section>
+
+      <!-- 四、 認知與邏輯思維 -->
+      <section class="card cog">
+        <div class="card-header">
+          <h2 class="card-title">四、 認知與邏輯思維 (Cognitive Strategy)</h2>
+        </div>
+        <div class="item">
+          <div class="item-title">結構化解題能力</div>
+          <div class="item-desc">習慣將複雜問題拆解為清晰的規則與邏輯序列（如演算法、策略邏輯應用）。</div>
+        </div>
+        <div class="item">
+          <div class="item-title">高密度資訊壓縮</div>
+          <div class="item-desc">擅長運用極短、高壓縮的符號與編碼方式在腦海中快速處理、組織大量物流與數據資訊。</div>
+        </div>
+      </section>
+
+    </div>
+
+    <footer>
+      <p>Vanilla Stack System &copy; 2026</p>
+    </footer>
+  </div>
+
+</body>
+</html>
